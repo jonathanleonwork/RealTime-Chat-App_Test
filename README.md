@@ -15,9 +15,9 @@ This project is built with React and Firebase [Chat App](https://realtime-chat-a
 - View user status
 - View user information
 
-## Author
+## Reference
 
-- [Manish Tiwari](https://linkedin.com/in/wdmanisht)
+- https://github.com/manishtmtmt/chat-app.git
 
 ## Recording Video
 
