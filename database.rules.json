@@ -1,0 +1,27 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "messages": {
+      ".read": "auth !== null",
+      ".write": "auth !== null",
+      ".indexOn": ["toUserId", "author/uid"],
+      "$message_id": {
+        ".read": "auth !== null",
+        ".write": "auth !== null"
+      }
+    },
+    "status": {
+      "$user_id": {
+        ".read": "auth !== null",
+        ".write": "$user_id === auth.uid"
+      }
+    },
+    ".read": "auth !== null",
+    ".write": "auth !== null"
+  }
+}
